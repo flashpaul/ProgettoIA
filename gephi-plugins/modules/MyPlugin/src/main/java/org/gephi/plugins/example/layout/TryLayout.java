@@ -41,11 +41,14 @@ Portions Copyrighted 2011 Gephi Consortium.
  */
 package org.gephi.plugins.example.layout;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-import org.gephi.graph.api.Graph;
-import org.gephi.graph.api.GraphModel;
-import org.gephi.graph.api.Node;
+import java.util.Map;
+import java.util.Set;
+
+import org.gephi.graph.api.*;
+import org.gephi.graph.spi.LayoutData;
 import org.gephi.layout.spi.Layout;
 import org.gephi.layout.spi.LayoutBuilder;
 import org.gephi.layout.spi.LayoutProperty;
@@ -70,8 +73,7 @@ public class TryLayout implements Layout {
     //Flags
     private boolean executing = false;
     //Properties
-    private int areaSize;
-    private float speed;
+    private float areaSize;
 
     public TryLayout(TryLayoutBuilder builder) {
         this.builder = builder;
@@ -80,7 +82,6 @@ public class TryLayout implements Layout {
     @Override
     public void resetPropertiesValues() {
         areaSize = 1000;
-        speed = 1f;
     }
 
     @Override
@@ -97,22 +98,56 @@ public class TryLayout implements Layout {
 
         int rows = (int) Math.round(Math.sqrt(nodeCount)) + 1;
         int cols = (int) Math.round(Math.sqrt(nodeCount)) + 1;
+
+
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
                 Node node = nodes[i * rows + j];
                 //float x = (-areaSize / 2f) + ((float) j / cols) * areaSize;
                 //float y = (areaSize / 2f) - ((float) i / rows) * areaSize;
-                float x = j*10;
-                float y = i*10;
+                float x = (j*(areaSize/cols)) + (areaSize/cols)/2;
+                float y = (i*(areaSize/rows)) + (areaSize/rows)/2;
                 //float px = node.x();
                 //float py = node.y();
                 node.setX(x);
                 node.setY(y);
-                node.setSize(5);
+                node.setSize((areaSize/cols)/10);
             }
         }
 
         graph.readUnlock();
+
+        graph.writeLock();
+        Node[][] grid = new Node[rows+1][cols+1];
+
+        GraphFactory factory = graphModel.factory();
+        for (int i = 0; i<= rows; i++){
+            for(int j = 0; j <= cols; j++){
+                Node tmp = factory.newNode();
+                tmp.setX(j*(areaSize/cols));
+                tmp.setY(i*(areaSize/rows));
+                tmp.setSize(1);
+                tmp.setColor(Color.BLACK);
+                grid[i][j] = tmp;
+                graph.addNode(tmp);
+                if (i > 0) if (grid[i-1][j] != null){
+                    graph.addEdge(factory.newEdge(tmp, grid[i-1][j], 10, false));
+                }
+                if (i < rows) if (grid[i+1][j] != null){
+                    graph.addEdge(factory.newEdge(tmp, grid[i+1][j], 10, false));
+                }
+                if (j > 0) if (grid[i][j-1] != null){
+                    graph.addEdge(factory.newEdge(tmp, grid[i][j-1], 10, false));
+                }
+                if (j < cols) if (grid[i][j+1] != null){
+                    graph.addEdge(factory.newEdge(tmp, grid[i][j+1], 10, false));
+                }
+            }
+        }
+        graph.writeUnlock();
+
+
+        endAlgo();
     }
 
     @Override
@@ -132,17 +167,11 @@ public class TryLayout implements Layout {
 
         try {
             properties.add(LayoutProperty.createProperty(
-                    this, Integer.class,
+                    this, Float.class,
                     "Area size",
                     GRIDLAYOUT,
                     "The area size",
                     "getAreaSize", "setAreaSize"));
-            properties.add(LayoutProperty.createProperty(
-                    this, Float.class,
-                    "Speed",
-                    GRIDLAYOUT,
-                    "How fast are moving nodes",
-                    "getSpeed", "setSpeed"));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -160,19 +189,12 @@ public class TryLayout implements Layout {
         this.graphModel = gm;
     }
 
-    public Float getSpeed() {
-        return speed;
-    }
 
-    public void setSpeed(Float speed) {
-        this.speed = speed;
-    }
-
-    public Integer getAreaSize() {
+    public Float getAreaSize() {
         return areaSize;
     }
 
-    public void setAreaSize(Integer area) {
+    public void setAreaSize(Float area) {
         this.areaSize = area;
     }
 }
