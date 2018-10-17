@@ -72,8 +72,13 @@ public class TryLayout implements Layout {
     private GraphModel graphModel;
     //Flags
     private boolean executing = false;
+    private boolean first = true;
     //Properties
     private float areaSize;
+    private boolean centered;
+
+
+    private boolean gridded;
 
     public TryLayout(TryLayoutBuilder builder) {
         this.builder = builder;
@@ -82,6 +87,8 @@ public class TryLayout implements Layout {
     @Override
     public void resetPropertiesValues() {
         areaSize = 1000;
+        centered = true;
+        gridded = false;
     }
 
     @Override
@@ -92,60 +99,99 @@ public class TryLayout implements Layout {
     @Override
     public void goAlgo() {
         Graph graph = graphModel.getGraphVisible();
-        graph.readLock();
         int nodeCount = graph.getNodeCount();
         Node[] nodes = graph.getNodes().toArray();
 
+        if (!graphModel.getNodeTable().hasColumn("grid")) {
+            graphModel.getNodeTable().addColumn("grid", String.class);
+        }
+        else{
+            for (Node i : nodes){
+                if (i.getAttribute("grid").equals("grid")) nodeCount--;
+            }
+        }
+        graph.readLock();
+
         int rows = (int) Math.round(Math.sqrt(nodeCount)) + 1;
         int cols = (int) Math.round(Math.sqrt(nodeCount)) + 1;
+        float averageX= 0, averageY = 0;
 
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
                 Node node = nodes[i * rows + j];
-                //float x = (-areaSize / 2f) + ((float) j / cols) * areaSize;
-                //float y = (areaSize / 2f) - ((float) i / rows) * areaSize;
-                float x = (j*(areaSize/cols)) + (areaSize/cols)/2;
-                float y = (i*(areaSize/rows)) + (areaSize/rows)/2;
-                //float px = node.x();
-                //float py = node.y();
-                node.setX(x);
-                node.setY(y);
-                node.setSize((areaSize/cols)/10);
+                if (!first) {
+                    if (node.getAttribute("grid").toString().equals("")) {
+                        float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
+                        float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
+                        averageX += x;
+                        averageY += y;
+                        node.setX(x);
+                        node.setY(y);
+                        node.setSize((areaSize / cols) / 10);
+                    }
+                }
+                else{
+                    float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
+                    float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
+                    averageX += x;
+                    averageY += y;
+                    node.setX(x);
+                    node.setY(y);
+                    node.setSize((areaSize / cols) / 10);
+                    node.setAttribute("grid", "");
+                }
+            }
+        }
+        averageX = averageX / nodeCount;
+        averageY = averageY / nodeCount;
+
+        if (centered){
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
+                    Node n = nodes[i * rows + j];
+                float nodeX = n.x() - averageX;
+                float nodeY = n.y() - averageY;
+
+                n.setX(nodeX);
+                n.setY(nodeY);
+                }
             }
         }
 
         graph.readUnlock();
 
-        graph.writeLock();
-        Node[][] grid = new Node[rows+1][cols+1];
+        if (gridded && first) {
+            graph.writeLock();
+            Node[][] grid = new Node[rows + 1][cols + 1];
 
-        GraphFactory factory = graphModel.factory();
-        for (int i = 0; i<= rows; i++){
-            for(int j = 0; j <= cols; j++){
-                Node tmp = factory.newNode();
-                tmp.setX(j*(areaSize/cols));
-                tmp.setY(i*(areaSize/rows));
-                tmp.setSize(1);
-                tmp.setColor(Color.BLACK);
-                grid[i][j] = tmp;
-                graph.addNode(tmp);
-                if (i > 0) if (grid[i-1][j] != null){
-                    graph.addEdge(factory.newEdge(tmp, grid[i-1][j], 10, false));
-                }
-                if (i < rows) if (grid[i+1][j] != null){
-                    graph.addEdge(factory.newEdge(tmp, grid[i+1][j], 10, false));
-                }
-                if (j > 0) if (grid[i][j-1] != null){
-                    graph.addEdge(factory.newEdge(tmp, grid[i][j-1], 10, false));
-                }
-                if (j < cols) if (grid[i][j+1] != null){
-                    graph.addEdge(factory.newEdge(tmp, grid[i][j+1], 10, false));
+            GraphFactory factory = graphModel.factory();
+            for (int i = 0; i <= rows; i++) {
+                for (int j = 0; j <= cols; j++) {
+                    Node tmp = factory.newNode();
+                    tmp.setX(j * (areaSize / cols));
+                    tmp.setY(i * (areaSize / rows));
+                    tmp.setSize(1);
+                    tmp.setColor(Color.BLACK);
+                    tmp.setAttribute("grid", "grid");
+                    grid[i][j] = tmp;
+                    graph.addNode(tmp);
+                    if (i > 0) if (grid[i - 1][j] != null) {
+                        graph.addEdge(factory.newEdge(tmp, grid[i - 1][j], 10, false));
+                    }
+                    if (i < rows) if (grid[i + 1][j] != null) {
+                        graph.addEdge(factory.newEdge(tmp, grid[i + 1][j], 10, false));
+                    }
+                    if (j > 0) if (grid[i][j - 1] != null) {
+                        graph.addEdge(factory.newEdge(tmp, grid[i][j - 1], 10, false));
+                    }
+                    if (j < cols) if (grid[i][j + 1] != null) {
+                        graph.addEdge(factory.newEdge(tmp, grid[i][j + 1], 10, false));
+                    }
                 }
             }
+            graph.writeUnlock();
         }
-        graph.writeUnlock();
-
 
         endAlgo();
     }
@@ -153,6 +199,7 @@ public class TryLayout implements Layout {
     @Override
     public void endAlgo() {
         executing = false;
+        first = false;
     }
 
     @Override
@@ -163,15 +210,27 @@ public class TryLayout implements Layout {
     @Override
     public LayoutProperty[] getProperties() {
         List<LayoutProperty> properties = new ArrayList<LayoutProperty>();
-        final String GRIDLAYOUT = "Grid Layout"; //titolo del layout una volta selezionato
+        final String TRYLAYOUT = "Grid Layout"; //titolo del layout una volta selezionato
 
         try {
             properties.add(LayoutProperty.createProperty(
                     this, Float.class,
                     "Area size",
-                    GRIDLAYOUT,
+                    TRYLAYOUT,
                     "The area size",
                     "getAreaSize", "setAreaSize"));
+            properties.add(LayoutProperty.createProperty(
+                    this, Boolean.class,
+                    "Center",
+                    TRYLAYOUT,
+                    "Center the graph",
+                    "isCentered", "setCentered"));
+            properties.add(LayoutProperty.createProperty(
+                    this, Boolean.class,
+                    "Grid",
+                    TRYLAYOUT,
+                    "View the grid",
+                    "isGridded", "setGridded"));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -196,5 +255,20 @@ public class TryLayout implements Layout {
 
     public void setAreaSize(Float area) {
         this.areaSize = area;
+    }
+    public Boolean isCentered() {
+        return centered;
+    }
+
+    public void setCentered(Boolean centered) {
+        this.centered = centered;
+    }
+
+    public Boolean isGridded() {
+        return gridded;
+    }
+
+    public void setGridded(Boolean gridded) {
+        this.gridded = gridded;
     }
 }
