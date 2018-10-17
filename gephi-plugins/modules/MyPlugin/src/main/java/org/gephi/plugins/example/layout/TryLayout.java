@@ -44,11 +44,8 @@ package org.gephi.plugins.example.layout;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import org.gephi.graph.api.*;
-import org.gephi.graph.spi.LayoutData;
 import org.gephi.layout.spi.Layout;
 import org.gephi.layout.spi.LayoutBuilder;
 import org.gephi.layout.spi.LayoutProperty;
@@ -75,7 +72,6 @@ public class TryLayout implements Layout {
     private boolean first = true;
     //Properties
     private float areaSize;
-    private boolean centered;
 
 
     private boolean gridded;
@@ -87,7 +83,6 @@ public class TryLayout implements Layout {
     @Override
     public void resetPropertiesValues() {
         areaSize = 1000;
-        centered = true;
         gridded = false;
     }
 
@@ -114,8 +109,6 @@ public class TryLayout implements Layout {
 
         int rows = (int) Math.round(Math.sqrt(nodeCount)) + 1;
         int cols = (int) Math.round(Math.sqrt(nodeCount)) + 1;
-        float averageX= 0, averageY = 0;
-
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
@@ -124,8 +117,6 @@ public class TryLayout implements Layout {
                     if (node.getAttribute("grid").toString().equals("")) {
                         float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
                         float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
-                        averageX += x;
-                        averageY += y;
                         node.setX(x);
                         node.setY(y);
                         node.setSize((areaSize / cols) / 10);
@@ -134,8 +125,6 @@ public class TryLayout implements Layout {
                 else{
                     float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
                     float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
-                    averageX += x;
-                    averageY += y;
                     node.setX(x);
                     node.setY(y);
                     node.setSize((areaSize / cols) / 10);
@@ -143,34 +132,21 @@ public class TryLayout implements Layout {
                 }
             }
         }
-        averageX = averageX / nodeCount;
-        averageY = averageY / nodeCount;
-
-        if (centered){
-            for (int i = 0; i < rows; i++) {
-                for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
-                    Node n = nodes[i * rows + j];
-                float nodeX = n.x() - averageX;
-                float nodeY = n.y() - averageY;
-
-                n.setX(nodeX);
-                n.setY(nodeY);
-                }
-            }
-        }
 
         graph.readUnlock();
+        graph.writeLock();
 
         if (gridded && first) {
-            graph.writeLock();
             Node[][] grid = new Node[rows + 1][cols + 1];
 
             GraphFactory factory = graphModel.factory();
             for (int i = 0; i <= rows; i++) {
                 for (int j = 0; j <= cols; j++) {
                     Node tmp = factory.newNode();
-                    tmp.setX(j * (areaSize / cols));
-                    tmp.setY(i * (areaSize / rows));
+                    float x = j * (areaSize / cols);
+                    float y = i * (areaSize / rows);
+                    tmp.setX(x);
+                    tmp.setY(y);
                     tmp.setSize(1);
                     tmp.setColor(Color.BLACK);
                     tmp.setAttribute("grid", "grid");
@@ -190,8 +166,24 @@ public class TryLayout implements Layout {
                     }
                 }
             }
-            graph.writeUnlock();
+            first = false;
         }
+        if (!gridded){
+            for (Node i: nodes){
+                if (i.getAttribute("grid").equals("grid")){
+                    for (Edge j : graph.getEdges().toArray()){
+                        if (j.getSource() == i ) graph.removeEdge(j);
+                        else if (j.getTarget() == i ) graph.removeEdge(j);
+                    }
+                    graph.removeNode(i);
+                }
+            }
+            first = true;
+        }
+        graph.writeUnlock();
+
+
+
 
         endAlgo();
     }
@@ -199,7 +191,6 @@ public class TryLayout implements Layout {
     @Override
     public void endAlgo() {
         executing = false;
-        first = false;
     }
 
     @Override
@@ -219,12 +210,6 @@ public class TryLayout implements Layout {
                     TRYLAYOUT,
                     "The area size",
                     "getAreaSize", "setAreaSize"));
-            properties.add(LayoutProperty.createProperty(
-                    this, Boolean.class,
-                    "Center",
-                    TRYLAYOUT,
-                    "Center the graph",
-                    "isCentered", "setCentered"));
             properties.add(LayoutProperty.createProperty(
                     this, Boolean.class,
                     "Grid",
@@ -256,14 +241,6 @@ public class TryLayout implements Layout {
     public void setAreaSize(Float area) {
         this.areaSize = area;
     }
-    public Boolean isCentered() {
-        return centered;
-    }
-
-    public void setCentered(Boolean centered) {
-        this.centered = centered;
-    }
-
     public Boolean isGridded() {
         return gridded;
     }
