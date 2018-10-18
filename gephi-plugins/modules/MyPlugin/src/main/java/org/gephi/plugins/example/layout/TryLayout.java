@@ -107,33 +107,51 @@ public class TryLayout implements Layout {
         }
         graph.readLock();
 
+        if (graphModel.getNodeTable().hasColumn("X") && graphModel.getNodeTable().hasColumn("Y")){
+            for (int i = 0; i < nodeCount; i++) {
+                Node node = nodes[i];
+
+                int x = Integer.parseInt(node.getAttribute("X").toString());
+                int y = Integer.parseInt(node.getAttribute("Y").toString());
+                node.setX(x);
+                node.setY(y);
+                //node.setSize((areaSize / cols) / 10);
+                if (first) {
+                    node.setAttribute("grid", "");
+                }
+
+            }
+        }
+        graph.readUnlock();
+
+
         int rows = (int) Math.round(Math.sqrt(nodeCount)) + 1;
         int cols = (int) Math.round(Math.sqrt(nodeCount)) + 1;
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
-                Node node = nodes[i * rows + j];
-                if (!first) {
-                    if (node.getAttribute("grid").toString().equals("")) {
-                        float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
-                        float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
-                        node.setX(x);
-                        node.setY(y);
-                        node.setSize((areaSize / cols) / 10);
-                    }
-                }
-                else{
-                    float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
-                    float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
-                    node.setX(x);
-                    node.setY(y);
-                    node.setSize((areaSize / cols) / 10);
-                    node.setAttribute("grid", "");
-                }
-            }
-        }
+//        for (int i = 0; i < rows; i++) {
+//            for (int j = 0; j < cols && (i * rows + j) < nodes.length; j++) {
+//                Node node = nodes[i * rows + j];
+//                if (!first) {
+//                    if (node.getAttribute("grid").toString().equals("")) {
+//                        float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
+//                        float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
+//                        node.setX(x);
+//                        node.setY(y);
+//                        node.setSize((areaSize / cols) / 10);
+//                    }
+//                }
+//                else{
+//                    float x = (j * (areaSize / cols)) + (areaSize / cols) / 2;
+//                    float y = (i * (areaSize / rows)) + (areaSize / rows) / 2;
+//                    node.setX(x);
+//                    node.setY(y);
+//                    node.setSize((areaSize / cols) / 10);
+//                    node.setAttribute("grid", "");
+//                }
+//            }
+//        }
 
-        graph.readUnlock();
+//        graph.readUnlock();
         graph.writeLock();
 
         if (gridded && first) {
