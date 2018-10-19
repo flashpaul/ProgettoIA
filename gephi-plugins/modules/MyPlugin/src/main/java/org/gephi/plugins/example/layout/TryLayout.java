@@ -49,6 +49,9 @@ import org.gephi.graph.api.*;
 import org.gephi.layout.spi.Layout;
 import org.gephi.layout.spi.LayoutBuilder;
 import org.gephi.layout.spi.LayoutProperty;
+import org.gephi.ui.propertyeditor.NodeColumnAllNumbersEditor;
+import org.gephi.ui.propertyeditor.NodeColumnNumbersEditor;
+import org.openide.util.Lookup;
 
 /**
  * Example of a layout algorithm which places all nodes in a grid.
@@ -72,18 +75,29 @@ public class TryLayout implements Layout {
     private boolean first = true;
     //Properties
     private float areaSize;
+    private String xAttribute;
+    public static String[] attributes;
+
 
 
     private boolean gridded;
 
     public TryLayout(TryLayoutBuilder builder) {
         this.builder = builder;
+        resetPropertiesValues();
     }
 
     @Override
     public void resetPropertiesValues() {
         areaSize = 1000;
         gridded = false;
+
+        if (graphModel != null) {
+            attributes = new String[graphModel.getNodeTable().countColumns()];
+            for (int i = 0; i < graphModel.getNodeTable().countColumns(); i++) {
+                attributes[i] = graphModel.getNodeTable().getColumn(i).getId();
+            }
+        }
     }
 
     @Override
@@ -219,7 +233,7 @@ public class TryLayout implements Layout {
     @Override
     public LayoutProperty[] getProperties() {
         List<LayoutProperty> properties = new ArrayList<LayoutProperty>();
-        final String TRYLAYOUT = "Grid Layout"; //titolo del layout una volta selezionato
+        final String TRYLAYOUT = "Try Layout"; //titolo del layout una volta selezionato
 
         try {
             properties.add(LayoutProperty.createProperty(
@@ -234,6 +248,12 @@ public class TryLayout implements Layout {
                     TRYLAYOUT,
                     "View the grid",
                     "isGridded", "setGridded"));
+            properties.add(LayoutProperty.createProperty(
+                    this, String.class,
+                    "X attribute",
+                    TRYLAYOUT,
+                    "The attribute to be used as horizontal coordinate",
+                    "getxAttribute", "setxAttribute", CustomComboBoxEditor.class));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -249,6 +269,7 @@ public class TryLayout implements Layout {
     @Override
     public void setGraphModel(GraphModel gm) {
         this.graphModel = gm;
+        resetPropertiesValues();
     }
 
 
@@ -265,5 +286,13 @@ public class TryLayout implements Layout {
 
     public void setGridded(Boolean gridded) {
         this.gridded = gridded;
+    }
+
+    public String getxAttribute() {
+        return xAttribute;
+    }
+
+    public void setxAttribute(String xAttribute) {
+        this.xAttribute = xAttribute;
     }
 }
