@@ -75,7 +75,7 @@ public class TryLayout implements Layout {
     private boolean first = true;
     //Properties
     private float areaSize;
-    private String xAttribute;
+    private String xAttribute, yAttribute;
     public static String[] attributes;
 
 
@@ -254,6 +254,12 @@ public class TryLayout implements Layout {
                     TRYLAYOUT,
                     "The attribute to be used as horizontal coordinate",
                     "getxAttribute", "setxAttribute", CustomComboBoxEditor.class));
+            properties.add(LayoutProperty.createProperty(
+                    this, String.class,
+                    "Y attribute",
+                    TRYLAYOUT,
+                    "The attribute to be used as vertical coordinate",
+                    "getyAttribute", "setyAttribute", CustomComboBoxEditor.class));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -294,5 +300,13 @@ public class TryLayout implements Layout {
 
     public void setxAttribute(String xAttribute) {
         this.xAttribute = xAttribute;
+    }
+
+    public String getyAttribute() {
+        return yAttribute;
+    }
+
+    public void setyAttribute(String yAttribute) {
+        this.yAttribute = yAttribute;
     }
 }

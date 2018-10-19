@@ -43,15 +43,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2602" />
+          <entry key="java" value="2646" />
           <entry key="properties" value="17" />
-          <entry key="txt" value="101" />
+          <entry key="txt" value="145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2602" />
-          <entry key="PLAIN_TEXT" value="101" />
+          <entry key="JAVA" value="2646" />
+          <entry key="PLAIN_TEXT" value="145" />
           <entry key="Properties" value="17" />
         </counts>
       </usages-collector>
@@ -111,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/TryLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="97" column="79" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+            <state relative-caret-position="-189">
+              <caret line="97" column="79" lean-forward="true" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3701#3702#0" expanded="true" />
@@ -135,6 +135,10 @@
                 <element signature="e#9975#9976#0" expanded="true" />
                 <element signature="e#10027#10028#0" expanded="true" />
                 <element signature="e#10071#10072#0" expanded="true" />
+                <element signature="e#10376#10377#0" expanded="true" />
+                <element signature="e#10409#10410#0" expanded="true" />
+                <element signature="e#10461#10462#0" expanded="true" />
+                <element signature="e#10505#10506#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/CustomComboBoxEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="74" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="74" />
+            <state>
+              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
               <folding>
                 <element signature="e#154#155#0" expanded="true" />
                 <element signature="e#177#178#0" expanded="true" />
@@ -156,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/AbstractProjectionPropertyEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state relative-caret-position="134">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="e#259#260#0" expanded="true" />
                 <element signature="e#296#297#0" expanded="true" />
@@ -330,7 +334,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539946799622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539947137506" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17578125" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -367,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539939770122</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Prova di aggiunta Combobox per attributo x">
+      <created>1539946898778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539946898778</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -375,9 +386,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -387,7 +397,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,7 +425,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prova di pushing da Intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prova di pushing da Intellij" />
+    <MESSAGE value="Prova di aggiunta Combobox per attributo x" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prova di aggiunta Combobox per attributo x" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
@@ -480,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/AbstractProjectionPropertyEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        <state relative-caret-position="134">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
             <element signature="e#259#260#0" expanded="true" />
             <element signature="e#296#297#0" expanded="true" />
@@ -499,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/CustomComboBoxEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="74" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="74" />
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
           <folding>
             <element signature="e#154#155#0" expanded="true" />
             <element signature="e#177#178#0" expanded="true" />
@@ -510,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/TryLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="97" column="79" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+        <state relative-caret-position="-189">
+          <caret line="97" column="79" lean-forward="true" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3701#3702#0" expanded="true" />
@@ -534,6 +545,10 @@
             <element signature="e#9975#9976#0" expanded="true" />
             <element signature="e#10027#10028#0" expanded="true" />
             <element signature="e#10071#10072#0" expanded="true" />
+            <element signature="e#10376#10377#0" expanded="true" />
+            <element signature="e#10409#10410#0" expanded="true" />
+            <element signature="e#10461#10462#0" expanded="true" />
+            <element signature="e#10505#10506#0" expanded="true" />
           </folding>
         </state>
       </provider>
