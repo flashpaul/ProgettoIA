@@ -121,20 +121,18 @@ public class TryLayout implements Layout {
         }
         graph.readLock();
 
-        if (graphModel.getNodeTable().hasColumn("X") && graphModel.getNodeTable().hasColumn("Y")){
-            for (int i = 0; i < nodeCount; i++) {
-                Node node = nodes[i];
+        for (int i = 0; i < nodeCount; i++) {
+            Node node = nodes[i];
 
-                int x = Integer.parseInt(node.getAttribute("X").toString());
-                int y = Integer.parseInt(node.getAttribute("Y").toString());
-                node.setX(x);
-                node.setY(y);
-                //node.setSize((areaSize / cols) / 10);
-                if (first) {
-                    node.setAttribute("grid", "");
-                }
-
+            int x = Integer.parseInt(node.getAttribute(xAttribute).toString());
+            int y = Integer.parseInt(node.getAttribute(yAttribute).toString());
+            node.setX(x);
+            node.setY(y);
+            //node.setSize((areaSize / cols) / 10);
+            if (first) {
+                node.setAttribute("grid", "no");
             }
+
         }
         graph.readUnlock();
 

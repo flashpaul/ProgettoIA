@@ -43,15 +43,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2646" />
+          <entry key="java" value="2656" />
           <entry key="properties" value="17" />
-          <entry key="txt" value="145" />
+          <entry key="txt" value="178" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2646" />
-          <entry key="PLAIN_TEXT" value="145" />
+          <entry key="JAVA" value="2656" />
+          <entry key="PLAIN_TEXT" value="178" />
           <entry key="Properties" value="17" />
         </counts>
       </usages-collector>
@@ -111,34 +111,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/TryLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="97" column="79" lean-forward="true" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+            <state relative-caret-position="-1369">
+              <caret line="131" column="24" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3701#3702#0" expanded="true" />
                 <element signature="e#3733#3734#0" expanded="true" />
-                <element signature="e#8090#8091#0" expanded="true" />
-                <element signature="e#8123#8124#0" expanded="true" />
-                <element signature="e#8169#8170#0" expanded="true" />
-                <element signature="e#8201#8202#0" expanded="true" />
-                <element signature="e#9451#9452#0" expanded="true" />
-                <element signature="e#9481#9482#0" expanded="true" />
-                <element signature="e#9647#9648#0" expanded="true" />
-                <element signature="e#9678#9679#0" expanded="true" />
-                <element signature="e#9721#9722#0" expanded="true" />
-                <element signature="e#9757#9758#0" expanded="true" />
-                <element signature="e#9790#9791#0" expanded="true" />
+                <element signature="e#7944#7945#0" expanded="true" />
+                <element signature="e#7977#7978#0" expanded="true" />
+                <element signature="e#8023#8024#0" expanded="true" />
+                <element signature="e#8055#8056#0" expanded="true" />
+                <element signature="e#9624#9625#0" expanded="true" />
+                <element signature="e#9654#9655#0" expanded="true" />
                 <element signature="e#9820#9821#0" expanded="true" />
-                <element signature="e#9867#9868#0" expanded="true" />
-                <element signature="e#9905#9906#0" expanded="true" />
-                <element signature="e#9942#9943#0" expanded="true" />
-                <element signature="e#9975#9976#0" expanded="true" />
-                <element signature="e#10027#10028#0" expanded="true" />
-                <element signature="e#10071#10072#0" expanded="true" />
-                <element signature="e#10376#10377#0" expanded="true" />
-                <element signature="e#10409#10410#0" expanded="true" />
-                <element signature="e#10461#10462#0" expanded="true" />
-                <element signature="e#10505#10506#0" expanded="true" />
+                <element signature="e#9851#9852#0" expanded="true" />
+                <element signature="e#9894#9895#0" expanded="true" />
+                <element signature="e#9930#9931#0" expanded="true" />
+                <element signature="e#9963#9964#0" expanded="true" />
+                <element signature="e#9993#9994#0" expanded="true" />
+                <element signature="e#10040#10041#0" expanded="true" />
+                <element signature="e#10078#10079#0" expanded="true" />
+                <element signature="e#10115#10116#0" expanded="true" />
+                <element signature="e#10148#10149#0" expanded="true" />
+                <element signature="e#10200#10201#0" expanded="true" />
+                <element signature="e#10244#10245#0" expanded="true" />
+                <element signature="e#10281#10282#0" expanded="true" />
+                <element signature="e#10314#10315#0" expanded="true" />
+                <element signature="e#10366#10367#0" expanded="true" />
+                <element signature="e#10410#10411#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -334,7 +334,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539947137506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539948241042" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17578125" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -378,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539946898778</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aggiunta combobox per attributo y">
+      <created>1539947365742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539947365742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -387,7 +394,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -397,7 +404,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,7 +433,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prova di pushing da Intellij" />
     <MESSAGE value="Prova di aggiunta Combobox per attributo x" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prova di aggiunta Combobox per attributo x" />
+    <MESSAGE value="Aggiunta combobox per attributo y" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta combobox per attributo y" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
@@ -521,34 +529,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/MyPlugin/src/main/java/org/gephi/plugins/example/layout/TryLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="97" column="79" lean-forward="true" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+        <state relative-caret-position="-1369">
+          <caret line="131" column="24" lean-forward="true" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3701#3702#0" expanded="true" />
             <element signature="e#3733#3734#0" expanded="true" />
-            <element signature="e#8090#8091#0" expanded="true" />
-            <element signature="e#8123#8124#0" expanded="true" />
-            <element signature="e#8169#8170#0" expanded="true" />
-            <element signature="e#8201#8202#0" expanded="true" />
-            <element signature="e#9451#9452#0" expanded="true" />
-            <element signature="e#9481#9482#0" expanded="true" />
-            <element signature="e#9647#9648#0" expanded="true" />
-            <element signature="e#9678#9679#0" expanded="true" />
-            <element signature="e#9721#9722#0" expanded="true" />
-            <element signature="e#9757#9758#0" expanded="true" />
-            <element signature="e#9790#9791#0" expanded="true" />
+            <element signature="e#7944#7945#0" expanded="true" />
+            <element signature="e#7977#7978#0" expanded="true" />
+            <element signature="e#8023#8024#0" expanded="true" />
+            <element signature="e#8055#8056#0" expanded="true" />
+            <element signature="e#9624#9625#0" expanded="true" />
+            <element signature="e#9654#9655#0" expanded="true" />
             <element signature="e#9820#9821#0" expanded="true" />
-            <element signature="e#9867#9868#0" expanded="true" />
-            <element signature="e#9905#9906#0" expanded="true" />
-            <element signature="e#9942#9943#0" expanded="true" />
-            <element signature="e#9975#9976#0" expanded="true" />
-            <element signature="e#10027#10028#0" expanded="true" />
-            <element signature="e#10071#10072#0" expanded="true" />
-            <element signature="e#10376#10377#0" expanded="true" />
-            <element signature="e#10409#10410#0" expanded="true" />
-            <element signature="e#10461#10462#0" expanded="true" />
-            <element signature="e#10505#10506#0" expanded="true" />
+            <element signature="e#9851#9852#0" expanded="true" />
+            <element signature="e#9894#9895#0" expanded="true" />
+            <element signature="e#9930#9931#0" expanded="true" />
+            <element signature="e#9963#9964#0" expanded="true" />
+            <element signature="e#9993#9994#0" expanded="true" />
+            <element signature="e#10040#10041#0" expanded="true" />
+            <element signature="e#10078#10079#0" expanded="true" />
+            <element signature="e#10115#10116#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+            <element signature="e#10200#10201#0" expanded="true" />
+            <element signature="e#10244#10245#0" expanded="true" />
+            <element signature="e#10281#10282#0" expanded="true" />
+            <element signature="e#10314#10315#0" expanded="true" />
+            <element signature="e#10366#10367#0" expanded="true" />
+            <element signature="e#10410#10411#0" expanded="true" />
           </folding>
         </state>
       </provider>
