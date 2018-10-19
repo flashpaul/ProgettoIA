@@ -58,7 +58,7 @@ public class TryLayoutBuilder implements LayoutBuilder {
 
     @Override
     public String getName() {
-        return "Try Layout"; //Il nome che si vede  nel combobox
+        return "Placer Layout"; //Il nome che si vede  nel combobox
     }
 
     @Override

@@ -225,25 +225,25 @@ public class TryLayout implements Layout {
     @Override
     public LayoutProperty[] getProperties() {
         List<LayoutProperty> properties = new ArrayList<LayoutProperty>();
-        final String TRYLAYOUT = "Try Layout"; //titolo del layout una volta selezionato
+        final String PLACERLAYOUT = "Placer Layout"; //titolo del layout una volta selezionato
 
         try {
             properties.add(LayoutProperty.createProperty(
                     this, Boolean.class,
                     "Grid",
-                    TRYLAYOUT,
+                     PLACERLAYOUT,
                     "View the grid",
                     "isGridded", "setGridded"));
             properties.add(LayoutProperty.createProperty(
                     this, String.class,
                     "X attribute",
-                    TRYLAYOUT,
+                    PLACERLAYOUT,
                     "The attribute to be used as horizontal coordinate",
                     "getxAttribute", "setxAttribute", CustomComboBoxEditor.class));
             properties.add(LayoutProperty.createProperty(
                     this, String.class,
                     "Y attribute",
-                    TRYLAYOUT,
+                    PLACERLAYOUT,
                     "The attribute to be used as vertical coordinate",
                     "getyAttribute", "setyAttribute", CustomComboBoxEditor.class));
         } catch (Exception e) {
