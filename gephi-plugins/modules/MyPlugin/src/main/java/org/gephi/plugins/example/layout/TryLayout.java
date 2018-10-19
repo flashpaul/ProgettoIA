@@ -74,7 +74,6 @@ public class TryLayout implements Layout {
     private boolean executing = false;
     private boolean first = true;
     //Properties
-    private float areaSize;
     private String xAttribute, yAttribute;
     public static String[] attributes;
 
@@ -89,9 +88,7 @@ public class TryLayout implements Layout {
 
     @Override
     public void resetPropertiesValues() {
-        areaSize = 1000;
         gridded = false;
-
         if (graphModel != null) {
             attributes = new String[graphModel.getNodeTable().countColumns()];
             for (int i = 0; i < graphModel.getNodeTable().countColumns(); i++) {
@@ -173,8 +170,8 @@ public class TryLayout implements Layout {
             for (int i = 0; i <= rows; i++) {
                 for (int j = 0; j <= cols; j++) {
                     Node tmp = factory.newNode();
-                    float x = j * (areaSize / cols);
-                    float y = i * (areaSize / rows);
+                    float x = j;
+                    float y = i;
                     tmp.setX(x);
                     tmp.setY(y);
                     tmp.setSize(1);
@@ -212,9 +209,6 @@ public class TryLayout implements Layout {
         }
         graph.writeUnlock();
 
-
-
-
         endAlgo();
     }
 
@@ -234,12 +228,6 @@ public class TryLayout implements Layout {
         final String TRYLAYOUT = "Try Layout"; //titolo del layout una volta selezionato
 
         try {
-            properties.add(LayoutProperty.createProperty(
-                    this, Float.class,
-                    "Area size",
-                    TRYLAYOUT,
-                    "The area size",
-                    "getAreaSize", "setAreaSize"));
             properties.add(LayoutProperty.createProperty(
                     this, Boolean.class,
                     "Grid",
@@ -276,14 +264,6 @@ public class TryLayout implements Layout {
         resetPropertiesValues();
     }
 
-
-    public Float getAreaSize() {
-        return areaSize;
-    }
-
-    public void setAreaSize(Float area) {
-        this.areaSize = area;
-    }
     public Boolean isGridded() {
         return gridded;
     }
