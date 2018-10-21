@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Name: My Statistic
+OpenIDE-Module-Short-Description: Todo
+OpenIDE-Module-Long-Description: Todo
+OpenIDE-Module-Display-Category: Metric

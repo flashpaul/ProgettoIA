@@ -13,6 +13,7 @@
     <modules>
         <!-- Add here the paths of all modules (e.g. <module>modules/MyModule</module>) -->
         <module>modules/MyPlugin</module>
+        <module>modules/MyStatistic</module>
     </modules>
     
     <!-- Properties -->
