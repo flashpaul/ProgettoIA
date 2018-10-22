@@ -39,16 +39,9 @@ Contributor(s):
 
 Portions Copyrighted 2011 Gephi Consortium.
  */
-//package org.gephi.plugins.example.statistics;
 
-import org.gephi.graph.api.Column;
-import org.gephi.graph.api.Graph;
-import org.gephi.graph.api.GraphModel;
-import org.gephi.graph.api.Node;
-import org.gephi.graph.api.Origin;
-import org.gephi.graph.api.Table;
-import org.gephi.plugins.example.statistics.AverageEuclideanDistanceBuilder;
-import org.gephi.plugins.example.statistics.AverageEuclideanDistanceUI;
+
+import org.gephi.graph.api.*;
 import org.gephi.statistics.spi.Statistics;
 
 /**
