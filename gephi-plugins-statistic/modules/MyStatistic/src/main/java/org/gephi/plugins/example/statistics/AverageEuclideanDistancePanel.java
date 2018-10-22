@@ -1,4 +1,4 @@
-/*
+package org.gephi.plugins.example.statistics;/*
 Copyright 2008-2011 Gephi
 Authors : Mathieu Bastian <mathieu.bastian@gephi.org>
 Website : http://www.gephi.org
@@ -39,7 +39,7 @@ Contributor(s):
 
 Portions Copyrighted 2011 Gephi Consortium.
  */
-package org.gephi.plugins.example.statistics;
+//package org.gephi.plugins.example.statistics;
 
 /**
  * Settings panel for the {@link AverageEuclideanDistance} statistic. It uses

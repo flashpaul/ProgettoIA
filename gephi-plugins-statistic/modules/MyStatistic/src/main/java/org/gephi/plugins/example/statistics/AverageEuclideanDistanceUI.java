@@ -1,4 +1,4 @@
-/*
+package org.gephi.plugins.example.statistics;/*
  Copyright 2008-2011 Gephi
  Authors : Mathieu Bastian <mathieu.bastian@gephi.org>
  Website : http://www.gephi.org
@@ -39,7 +39,7 @@
 
  Portions Copyrighted 2011 Gephi Consortium.
  */
-package org.gephi.plugins.example.statistics;
+//package org.gephi.plugins.example.statistics;
 
 import javax.swing.JPanel;
 import org.gephi.statistics.spi.Statistics;

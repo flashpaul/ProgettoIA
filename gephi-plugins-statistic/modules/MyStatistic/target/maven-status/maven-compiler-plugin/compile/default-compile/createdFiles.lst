@@ -1,0 +1,9 @@
+META-INF\services\org.gephi.statistics.spi.StatisticsUI
+META-INF\services\org.gephi.statistics.spi.StatisticsBuilder
+org\gephi\plugins\example\statistics\AverageEuclideanDistanceBuilder.class
+org\gephi\plugins\example\statistics\CountSelfLoopBuilder.class
+org\gephi\plugins\example\statistics\AverageEuclideanDistanceUI.class
+org\gephi\plugins\example\statistics\CountSelfLoopUI.class
+org\gephi\plugins\example\statistics\AverageEuclideanDistance.class
+org\gephi\plugins\example\statistics\AverageEuclideanDistancePanel.class
+org\gephi\plugins\example\statistics\CountSelfLoop.class
