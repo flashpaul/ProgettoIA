@@ -1,6 +1,5 @@
 META-INF\services\org.gephi.statistics.spi.StatisticsUI
 META-INF\services\org.gephi.statistics.spi.StatisticsBuilder
-org\gephi\plugins\example\statistics\CountSelfLoop$1.class
 org\gephi\plugins\example\statistics\CountSelfLoopBuilder.class
 org\gephi\plugins\example\statistics\CountSelfLoopUI.class
 org\gephi\plugins\example\statistics\CountSelfLoop.class
