@@ -45,8 +45,8 @@
     <toolbar configuration="Standard" preferred-icon-size="24"/>
     <tc-list>
   <tc-id id="StatisticsTopComponent"/>
-  <tc-id id="LayoutTopComponent"/>
   <tc-id id="GraphTopComponent"/>
+  <tc-id id="LayoutTopComponent"/>
   <tc-id id="FiltersTopComponent"/>
   <tc-id id="AppearanceTopComponent"/>
   <tc-id id="ContextTopComponent"/>
