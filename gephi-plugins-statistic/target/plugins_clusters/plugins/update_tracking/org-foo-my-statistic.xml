@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="org.foo.my.statistic">
-    <module_version install_time="1540298257518" last="true" origin="installer" specification_version="1.0.0">
+    <module_version install_time="1540298791528" last="true" origin="installer" specification_version="1.0.0">
         <file crc="3229333220" name="config/Modules/org-foo-my-statistic.xml"/>
         <file crc="2940920719" name="modules/ext/org.foo.my-statistic/colt/colt.jar"/>
         <file crc="2325472648" name="modules/ext/org.foo.my-statistic/concurrent/concurrent.jar"/>
@@ -7,7 +7,7 @@
         <file crc="1771500926" name="modules/ext/org.foo.my-statistic/joda-time/joda-time.jar"/>
         <file crc="1751153353" name="modules/ext/org.foo.my-statistic/org-gephi/graphstore.jar"/>
         <file crc="2972848508" name="modules/ext/org.foo.my-statistic/org-swinglabs-swingx/swingx-all.jar"/>
-        <file crc="509715709" name="modules/org-foo-my-statistic.jar"/>
-        <file crc="265373728" name="update_tracking/org-foo-my-statistic.xml"/>
+        <file crc="132234073" name="modules/org-foo-my-statistic.jar"/>
+        <file crc="39893410" name="update_tracking/org-foo-my-statistic.xml"/>
     </module_version>
 </module>

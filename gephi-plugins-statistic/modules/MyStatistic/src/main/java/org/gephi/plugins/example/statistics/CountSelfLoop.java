@@ -12,7 +12,7 @@ public class CountSelfLoop implements Statistics {
     public void execute(GraphModel graphModel) {
 
         try {
-            Process p = Runtime.getRuntime().exec("py C:\\Users\\andre\\OneDrive\\Documenti\\GitHub\\ProgettoIA\\gephi-plugins-statistic\\modules\\MyStatistic\\src\\main\\java\\org\\gephi\\plugins\\example\\statistics\\prova.py");
+            Process p = Runtime.getRuntime().exec("py ..\\..\\modules\\MyStatistic\\src\\main\\java\\org\\gephi\\plugins\\example\\statistics\\prova.py");
 
 
 
