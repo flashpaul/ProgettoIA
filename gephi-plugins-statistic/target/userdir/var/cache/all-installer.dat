@@ -1,4 +1,4 @@
-#Tue Oct 23 10:23:03 CEST 2018
+#Tue Oct 23 11:32:21 CEST 2018
 org.gephi.io.importer.api.OpenIDE-Module-Install=\u0000
 org.gephi.project.ui.OpenIDE-Module-Description=\u0000
 org.netbeans.core.ui.OpenIDE-Module-Install=\u0000
@@ -384,8 +384,8 @@ org.openide.awt.OpenIDE-Module-Layer=\u0000
 org.gephi.lib.validation.OpenIDE-Module-Install=\u0000
 org.netbeans.api.progress.nb.OpenIDE-Module-Deprecated=\u0000
 org.gephi.ui.propertyeditor.AutoUpdate-Show-In-Client=\u0000
-org.gephi.io.exporter.api.AutoUpdate-Show-In-Client=\u0000
 org.gephi.io.processor.plugin.AutoUpdate-Show-In-Client=\u0000
+org.gephi.io.exporter.api.AutoUpdate-Show-In-Client=\u0000
 org.gephi.desktop.project.OpenIDE-Module-Hide-Classpath-Packages=\u0000
 org.netbeans.api.annotations.common.OpenIDE-Module-Layer=\u0000
 org.gephi.utils.AutoUpdate-Show-In-Client=\u0000
@@ -769,8 +769,8 @@ org.gephi.desktop.datalab.OpenIDE-Module-Layer=org/gephi/desktop/datalab/layer.x
 org.gephi.ui.propertyeditor.OpenIDE-Module-Hide-Classpath-Packages=\u0000
 org.netbeans.modules.autoupdate.ui.OpenIDE-Module-Description=\u0000
 org.gephi.desktop.filters.OpenIDE-Module-Deprecated=\u0000
-org.gephi.ui.components.AutoUpdate-Show-In-Client=\u0000
 org.netbeans.api.intent.AutoUpdate-Show-In-Client=true
+org.gephi.ui.components.AutoUpdate-Show-In-Client=\u0000
 org.netbeans.core.ui.OpenIDE-Module-Deprecated=\u0000
 org.netbeans.modules.queries.OpenIDE-Module-Layer=\u0000
 org.gephi.lib.validation.OpenIDE-Module-Layer=\u0000
