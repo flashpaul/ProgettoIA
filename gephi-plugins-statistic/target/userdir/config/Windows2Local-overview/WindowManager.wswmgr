@@ -3,10 +3,10 @@
 <windowmanager version="2.1">
     <main-window>
   <joined-properties
-   x="90"
-   y="17"
-   width="1225"
-   height="691"
+   x="96"
+   y="72"
+   width="1728"
+   height="936"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -18,10 +18,10 @@
    frame-state="0"
 />
   <separated-properties
-   x="161"
-   y="76"
-   width="1043"
-   height="61"
+   x="192"
+   y="104"
+   width="1536"
+   height="83"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -38,16 +38,16 @@
   <path orientation="horizontal" number="40" weight="0.7" />
   <path orientation="vertical" number="40" weight="0.5" />
   </constraints>
-  <bounds x="430" y="184" width="547" height="337" />
+  <bounds x="633" y="249" width="806" height="457" />
     </editor-area>
-    <screen width="1366" height="768"/>
+    <screen width="1920" height="1080"/>
     <active-mode name="filtersmode"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
     <tc-list>
   <tc-id id="StatisticsTopComponent"/>
+  <tc-id id="LayoutTopComponent"/>
   <tc-id id="GraphTopComponent"/>
   <tc-id id="FiltersTopComponent"/>
-  <tc-id id="LayoutTopComponent"/>
   <tc-id id="AppearanceTopComponent"/>
   <tc-id id="ContextTopComponent"/>
     </tc-list>
