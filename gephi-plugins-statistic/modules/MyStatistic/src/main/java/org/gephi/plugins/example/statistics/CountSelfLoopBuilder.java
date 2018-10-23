@@ -9,7 +9,7 @@ public class CountSelfLoopBuilder implements StatisticsBuilder {
 
     @Override
     public String getName() {
-        return "Count self-loop";
+        return "Graph Embedding";
     }
 
     @Override

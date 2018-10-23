@@ -46,8 +46,8 @@
     <tc-list>
   <tc-id id="StatisticsTopComponent"/>
   <tc-id id="GraphTopComponent"/>
-  <tc-id id="LayoutTopComponent"/>
   <tc-id id="FiltersTopComponent"/>
+  <tc-id id="LayoutTopComponent"/>
   <tc-id id="AppearanceTopComponent"/>
   <tc-id id="ContextTopComponent"/>
     </tc-list>

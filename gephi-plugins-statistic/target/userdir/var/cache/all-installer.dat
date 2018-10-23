@@ -1,4 +1,4 @@
-#Tue Oct 23 09:47:09 CEST 2018
+#Tue Oct 23 10:23:03 CEST 2018
 org.gephi.io.importer.api.OpenIDE-Module-Install=\u0000
 org.gephi.project.ui.OpenIDE-Module-Description=\u0000
 org.netbeans.core.ui.OpenIDE-Module-Install=\u0000
@@ -211,8 +211,8 @@ org.openide.actions.OpenIDE-Module-Layer=\u0000
 org.gephi.ui.library.wrapper.OpenIDE-Module-Layer=\u0000
 org.gephi.processor.plugin.ui.OpenIDE-Module-Layer=\u0000
 org.gephi.appearance.plugin.ui.OpenIDE-Module-Description=\u0000
-org.gephi.desktop.filters.AutoUpdate-Show-In-Client=\u0000
 org.netbeans.core.nativeaccess.AutoUpdate-Show-In-Client=false
+org.gephi.desktop.filters.AutoUpdate-Show-In-Client=\u0000
 org.netbeans.core.ui.AutoUpdate-Show-In-Client=false
 org.gephi.io.generator.api.AutoUpdate-Show-In-Client=\u0000
 org.netbeans.api.io.OpenIDE-Module-Description=\u0000

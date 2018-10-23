@@ -5,37 +5,42 @@ import org.gephi.graph.api.Graph;
 import org.gephi.graph.api.GraphModel;
 import org.gephi.statistics.spi.Statistics;
 
+import java.io.IOException;
+
 public class CountSelfLoop implements Statistics {
 
     //Result
-    private int totalEdgeCount;
-    private int selfLoopCount;
 
     @Override
     public void execute(GraphModel graphModel) {
-        Graph graph = graphModel.getGraphVisible();
-        selfLoopCount = 0;
-        totalEdgeCount = graph.getEdgeCount();
-        for (Edge e : graph.getEdges()) {
-            if (e.isSelfLoop()) {
-                selfLoopCount++;
+        Thread z = new Thread(){
+            public void run(){
+                ProcessBuilder pb = new ProcessBuilder("python", "prova.py");
+                try {
+                    Process p = pb.start();
+                }catch(IOException e){
+                    e.printStackTrace();
+                }
             }
-        }
+        };
+        z.start();
+
+
     }
 
     @Override
     public String getReport() {
-        String report = "<HTML> <BODY> <h1>Count Self-Loop Report </h1> "
+        String report = "<HTML> <BODY> <h1>Embedding Report </h1> "
                 + "<hr>"
                 + "<br> <h2> Results: </h2>"
-                + "Total number of edges: " + totalEdgeCount
-                + "<br />Number of self-loop: " + selfLoopCount
+                + "Total number of edges: "
+                + "<br />Number of self-loop: "
                 + "<br />"
                 + "</BODY></HTML>";
         return report;
     }
 
     public int getSelfLoopCount() {
-        return selfLoopCount;
+        return 0;
     }
 }

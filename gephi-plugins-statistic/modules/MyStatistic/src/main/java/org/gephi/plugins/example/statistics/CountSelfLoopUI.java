@@ -40,8 +40,8 @@ public class CountSelfLoopUI implements StatisticsUI {
 
     @Override
     public String getDisplayName() {
-        return "Count self-loop";
-    }
+        return "Graph Embedding";
+    } //Nome nel menu a destra e dentro a settings
 
     @Override
     public String getCategory() {
