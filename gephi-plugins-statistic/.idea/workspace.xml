@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59143337-5526-4f66-b400-601f1afe928b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/gephi-plugins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gephi-plugins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/my-statistic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/my-statistic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/data/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/prova.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/prova.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/my-statistic-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/my-statistic-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/my-statistic-1.0.0.nbm" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/my-statistic-1.0.0.nbm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/nbm/my-statistic-1.0.0.nbm" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/nbm/my-statistic-1.0.0.nbm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/nbm/netbeans/plugins/modules/org-foo-my-statistic.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/nbm/netbeans/plugins/modules/org-foo-my-statistic.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/MyStatistic/target/nbm/netbeans/plugins/update_tracking/org-foo-my-statistic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/MyStatistic/target/nbm/netbeans/plugins/update_tracking/org-foo-my-statistic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/etc/gephi.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/etc/gephi.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-filters-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-filters-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-filters-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-filters-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-import-plugin-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-import-plugin-ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-exporter-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-exporter-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-importer-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-importer-api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-importer-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-importer-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-processor-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-io-processor-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-project-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/config/Modules/org-gephi-project-api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-filters-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-filters-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-filters-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-filters-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-import-plugin-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-import-plugin-ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-exporter-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-exporter-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-importer-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-importer-api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-importer-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-importer-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-processor-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-io-processor-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-project-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/gephi-0.9.2/gephi/update_tracking/org-gephi-project-api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plugins_clusters/plugins/config/Modules/org-foo-my-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plugins_clusters/plugins/modules/org-foo-my-plugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plugins_clusters/plugins/modules/org-foo-my-statistic.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/plugins_clusters/plugins/modules/org-foo-my-statistic.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plugins_clusters/plugins/update_tracking/org-foo-my-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plugins_clusters/plugins/update_tracking/org-foo-my-statistic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/plugins_clusters/plugins/update_tracking/org-foo-my-statistic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Preferences.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Preferences.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Preferences/org/gephi/desktop/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Preferences/org/gephi/desktop/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Preferences/org/gephi/mostrecentfiles/api/options/mrufiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Preferences/org/gephi/mostrecentfiles/api/options/mrufiles.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Preferences/org/netbeans/core/windows/tctracker/preview.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Preferences/org/netbeans/modules/autoupdate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Preferences/org/netbeans/modules/autoupdate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Preferences/org/netbeans/modules/autoupdate/ui.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Preferences/org/netbeans/modules/autoupdate/ui.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/AppearanceTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/ContextTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/FiltersTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/GraphTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/LayoutTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/PreviewSettingsTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/PreviewTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/StatisticsTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/properties.settings" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Components/properties.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/.nbattrs" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/.nbattrs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/bottomSlidingSide.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/bottomSlidingSide.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/editor.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/editor.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/editor/DataTableTopComponent.wstcref" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/editor/DataTableTopComponent.wstcref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/explorer.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/explorer.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/filtersmode.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/filtersmode.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/layoutmode.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/layoutmode.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/leftSlidingSide.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/leftSlidingSide.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/output.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/output.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/output/output.wstcref" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/output/output.wstcref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/properties.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/properties.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/properties/properties.wstcref" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/properties/properties.wstcref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/rankingmode.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/rankingmode.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/rankingmode/EditToolTopComponent.wstcref" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/rankingmode/EditToolTopComponent.wstcref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/rightSlidingSide.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/rightSlidingSide.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/topSlidingSide.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/Modes/topSlidingSide.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/WindowManager.wswmgr" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-datalab/WindowManager.wswmgr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/.nbattrs" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/.nbattrs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/explorer.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/explorer.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/output.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/output.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/properties.wsmode" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/Modes/properties.wsmode" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/WindowManager.wswmgr" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/config/Windows2Local-overview/WindowManager.wswmgr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/AppearanceTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/ContextTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/EditToolTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/FiltersTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/GraphTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/LayoutTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/PreviewSettingsTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/PreviewTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/StatisticsTopComponent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/output.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Components/properties.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/.nbattrs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/bottomSlidingSide.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/editor.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/editor/PreviewTopComponent.wstcref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/explorer.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/filtersmode.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/layoutmode.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/layoutmode/PreviewSettingsTopComponent.wstcref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/leftSlidingSide.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/output.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/output/output.wstcref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/properties.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/properties/properties.wstcref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/rightSlidingSide.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/Modes/topSlidingSide.wsmode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/config/Windows2Local-preview/WindowManager.wswmgr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/all-files.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/all-files.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/all-installer.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/all-installer.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/all-layers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/all-layers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/all-manifests.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/all-manifests.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/all-modules.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/all-modules.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/all-resources.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/all-resources.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/lastModified/all-checksum.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/lastModified/all-checksum.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/localeVariants" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/localeVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/cache/package-attrs.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/cache/package-attrs.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/log/messages.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/log/messages.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/log/messages.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/log/messages.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/log/messages.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/target/userdir/var/log/messages.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/userdir/var/log/updater.log.0" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/modules/MyStatistic/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1894027472">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="py" value="1" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="162" />
+          <entry key="txt" value="46" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="Python" value="162" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/CountSelfLoop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/MyStatistic/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-264" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/prova.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/data/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="55" selection-start-column="55" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/data/test.txt" />
+        <option value="$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/prova.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gephi-plugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gephi-plugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="61" />
+    <option name="y" value="5" />
+    <option name="width" value="1316" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="MyStatistic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="MyStatistic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="MyStatistic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="MyStatistic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="MyStatistic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gephi-plugins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gephi-plugins-statistic" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="MyStatistic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540568786776" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17578125" />
+    <property name="project.structure.side.proportion" value="0.50473934" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59143337-5526-4f66-b400-601f1afe928b" name="Default Changelist" comment="" />
+      <created>1540553382226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540553382226</updated>
+      <workItem from="1540553388189" duration="37000" />
+      <workItem from="1540553461049" duration="724000" />
+      <workItem from="1540554232673" duration="3831000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4592000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15545756" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" weight="0.0945946" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50079364" side_tool="true" weight="0.3276923" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.1030871" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/MyStatistic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/CountSelfLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/data/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/MyStatistic/src/main/java/org/gephi/plugins/example/statistics/prova.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python|my-statistic</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.50473934" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Python 3.6 (gephi-plugins-statistic)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.30875" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: colt:colt:1.2.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.50473934" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="package org.gephi:gephi-maven-plugin:run" />
+    <option value="vrhj+ù" />
+  </component>
+</project>

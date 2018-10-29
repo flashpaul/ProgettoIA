@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
 <attributes version="1.0">
-    <fileobject name="bottomSlidingSide">
-        <attr name="WinSys-TCRef-Order" stringvalue=""/>
-    </fileobject>
     <fileobject name="contextmode">
         <attr name="WinSys-TCRef-Order" stringvalue="ContextTopComponent"/>
     </fileobject>
     <fileobject name="editor">
         <attr name="WinSys-TCRef-Order" stringvalue="GraphTopComponent"/>
     </fileobject>
-    <fileobject name="explorer">
-        <attr name="WinSys-TCRef-Order" stringvalue=""/>
-    </fileobject>
     <fileobject name="filtersmode">
         <attr name="WinSys-TCRef-Order" stringvalue="FiltersTopComponent/StatisticsTopComponent"/>
     </fileobject>
     <fileobject name="layoutmode">
         <attr name="WinSys-TCRef-Order" stringvalue="LayoutTopComponent"/>
-    </fileobject>
-    <fileobject name="leftSlidingSide">
-        <attr name="WinSys-TCRef-Order" stringvalue=""/>
     </fileobject>
     <fileobject name="output">
         <attr name="WinSys-TCRef-Order" stringvalue="output"/>
@@ -30,11 +21,5 @@
     </fileobject>
     <fileobject name="rankingmode">
         <attr name="WinSys-TCRef-Order" stringvalue="AppearanceTopComponent/EditToolTopComponent"/>
-    </fileobject>
-    <fileobject name="rightSlidingSide">
-        <attr name="WinSys-TCRef-Order" stringvalue=""/>
-    </fileobject>
-    <fileobject name="topSlidingSide">
-        <attr name="WinSys-TCRef-Order" stringvalue=""/>
     </fileobject>
 </attributes>
