@@ -1,16 +1,40 @@
 import networkx as nx
 from node2vec import Node2Vec
+import socket
 
 # FILES
 EMBEDDING_FILENAME = './embeddings.emb'
 EMBEDDING_MODEL_FILENAME = './embeddings.model'
 
-# Create a graph
+#PYTHON CLIENT
+HOST = "localhost"
+PORT = 8080
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.connect((HOST, PORT))
+
+sock.sendall("Hello\n".encode())
+data = sock.recv(1024).decode()
+print("1) " + data)
+if data == "olleH":
+    sock.sendall("Bye\n".encode())
+    data = sock.recv(1024).decode()
+    print("2)", data)
+
+    sock.close()
+    print("Socket closed")
+
+
+
+
+
+# GRAPH NX
 # graph = nx.fast_gnp_random_graph(n=100, p=0.5)
 graph = nx.MultiGraph()
 # if edges are directed use MultiDiGraph()
 # nx.addnode
 # nx.addedge
+#graph.add_node
 
 # Precompute probabilities and generate walks
 node2vec = Node2Vec(graph, dimensions=2, walk_length=2, num_walks=2, workers=1)

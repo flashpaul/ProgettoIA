@@ -9,10 +9,12 @@ import org.openide.util.lookup.ServiceProvider;
 public class CountSelfLoopUI implements StatisticsUI {
 
     private CountSelfLoop statistic;
+    private CountSelfLoopPanel panel;
 
     @Override
     public JPanel getSettingsPanel() {
-        return null;
+        panel = new CountSelfLoopPanel();
+        return panel;
     }
 
     @Override
