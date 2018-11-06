@@ -1,6 +1,7 @@
 package org.gephi.plugins.example.statistics;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class CountSelfLoopPanel extends javax.swing.JPanel{
 
@@ -40,6 +41,7 @@ public class CountSelfLoopPanel extends javax.swing.JPanel{
 
         for (int i = 0;i<3;i++) {
             button[i] = new javax.swing.JRadioButton();
+            button[i].setMargin(new Insets(5,30,5,5));
         }
         justConnectionsRadio = new javax.swing.JRadioButton();
 

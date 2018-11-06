@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
->Log Session: Wednesday, October 31, 2018 11:41:24 AM CET
+>Log Session: Tuesday, November 6, 2018 10:11:22 AM CET
 >System Info: 
   Product Version         = Gephi 0.9.2 201709241107
   Operating System        = Windows 10 version 10.0 running on amd64
@@ -151,7 +151,7 @@ INFO [org.netbeans.core.startup.NbEvents]: Attivazione dei moduli:
 	org.gephi.appearance.plugin.ui [0.9.2 0.9.2 201709241117]
 	org.gephi.desktop.appearance [0.9.2 0.9.2 201709241117]
 	org.gephi.datalab.plugin [0.9.2 0.9.2 201709241119]
-	org.foo.my.statistic [1.0.0 1.0.0 201810311041]
+	org.foo.my.statistic [1.0.0 1.0.0 201811060911]
 	nl.cloudfarming.client.lib.platform.l10n [1.1 1.1-NB80 201411231331]
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy resolver: Windows
 INFO [org.netbeans.core.network.proxy.windows.WindowsNetworkProxy]: Windows system proxy resolver: auto detect
@@ -161,11 +161,9 @@ INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network prox
 INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
 INFO [org.openide.awt.Mnemonics]: Mapping from a non-Latin character '?' not found in a localized (branded) version of openide/awt/src/org/openide/awt/Mnemonics.properties - mnemonic cannot be assigned in &?
 INFO [null]: Last record repeated again.
-WARNING [org.netbeans.ProxyClassLoader]: Will not load class org.jdesktop.swingx.painter.BusyPainter arbitrarily from one of ModuleCL@467a0cab[org.gephi.ui.library.wrapper] and ModuleCL@48514da2[org.foo.my.statistic] starting from SystemClassLoader[133 modules]; see http://wiki.netbeans.org/DevFaqModuleCCE
+WARNING [org.netbeans.ProxyClassLoader]: Will not load class org.jdesktop.swingx.painter.BusyPainter arbitrarily from one of ModuleCL@7ea47db2[org.gephi.ui.library.wrapper] and ModuleCL@7dc152bf[org.foo.my.statistic] starting from SystemClassLoader[133 modules]; see http://wiki.netbeans.org/DevFaqModuleCCE
 WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator/Places at org.gephi.ui.upgrader.Upgrader.getCurrentVersion(Upgrader.java:123)
 INFO: Current Version is target
-Exception "java.lang.ClassNotFoundException: com/intellij/codeInsight/editorActions/FoldingData"while constructing DataFlavor for: application/x-java-jvm-local-objectref; class=com.intellij.codeInsight.editorActions.FoldingData
-INFO [null]: Last record repeated again.
 INFO: GL_VENDOR: Intel
 INFO: GL_RENDERER: Intel(R) HD Graphics 3000
 INFO: GL_VERSION: 3.1.0 - Build 9.17.10.4459
@@ -203,15 +201,12 @@ Input arguments:
 Compiler: HotSpot 64-Bit Tiered Compilers
 Heap memory usage: initial 64,0MB maximum 455,5MB
 Non heap memory usage: initial 2,4MB maximum -1b
-Garbage collector: PS Scavenge (Collections=10 Total time spent=0s)
+Garbage collector: PS Scavenge (Collections=9 Total time spent=0s)
 Garbage collector: PS MarkSweep (Collections=2 Total time spent=0s)
-Classes: loaded=6688 total loaded=6688 unloaded 0
+Classes: loaded=6687 total loaded=6687 unloaded 0
 INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 12.791.656.448
 INFO [null]: Memoria fisica totale 12.791.656.448
 WARNING [org.openide.filesystems.Ordering]: Not all children in Menu/View/ marked with the position attribute: [org-netbeans-core-windows-actions-ToggleFullScreenAction.instance], but some are: [ToggleFullScreenAction.shadow]
-INFO [org.openide.awt.Mnemonics]: Mapping from a non-Latin character '?' not found in a localized (branded) version of openide/awt/src/org/openide/awt/Mnemonics.properties - mnemonic cannot be assigned in &?
 WARNING [org.netbeans.modules.autoupdate.updateproviders.AutoupdateCatalogFactory]: Services/AutoupdateType/org_gephi_branding_update_center.instance: url_key attribute deprecated in favor of url
 WARNING [org.netbeans.modules.autoupdate.updateproviders.AutoupdateCatalogFactory]: Services/AutoupdateType/org_gephi_branding_update_center_1.instance: url_key attribute deprecated in favor of url
-Exception "java.lang.ClassNotFoundException: com/intellij/codeInsight/editorActions/ReferenceData"while constructing DataFlavor for: application/x-java-jvm-local-objectref; class=com.intellij.codeInsight.editorActions.ReferenceData
-INFO [null]: Last record repeated again.
-INFO [org.netbeans.core.ui.focus]: External Changes Refresh on focus gain disabled
+INFO [org.openide.awt.Mnemonics]: Mapping from a non-Latin character '?' not found in a localized (branded) version of openide/awt/src/org/openide/awt/Mnemonics.properties - mnemonic cannot be assigned in &?
